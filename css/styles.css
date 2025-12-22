@@ -1,0 +1,203 @@
+:root {
+    --bg: #32344f;
+    --colorhover:#63cafe;/*escolhi essa cor por que  esta escrito café nela hahaha*/
+    --texto: #d5f4f9;
+    --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb;
+    --primaryGradient:linear-gradient(90deg, #0084b9 0%,#00d689 100%);
+    --secondaryGradient:linear-gradient(90deg, #00b93e 0%,#b3f043 100%);
+    --tertiaryGradient:linear-gradient(90deg, #d2a31e 0%,#fe7843 100%);
+    --quarterGradient:linear-gradient(90deg, #12b3ab 0%,#253916 100%);
+    --fiftithGradient:linear-gradient(90deg, #8a7c9c 0%,#c5c0c9 100%);
+    --fontnav: "Plus Jakarta Sans", sans-serif;
+    --fontglobal: "Poppins", sans-serif;
+}
+.fa-brands.fa-css3{
+color: #264DE4;
+background-image: linear-gradient(#667dda, #2965F1);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.fa-brands.fa-html5 {
+    color: #E44D26; 
+    background-image: linear-gradient(#e27554, #be4e26);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Estilos padrão */
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    font-family: var(--fontnav);
+}
+a {
+    text-decoration: none;
+    color: var(--texto);
+}
+.navItem:hover{
+    color: var(--colorhover);
+}
+.btn:hover{
+background-color: var(--colorhover);
+        color: #4944b8;
+        transition: 0.5s;
+    }
+.btn{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: var(--fontglobal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--texto);
+}
+.sobremin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+header{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+header img{
+    display: flex;
+    align-self: start;
+    max-width: 5rem;
+    max-height: 5rem;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1em;
+}
+p.upercase{
+    margin-left: 1rem;
+}
+#tecnologias{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+#tecnologias i {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+i.fa-brands.fa-square-js{
+    color: #F7DF1E;
+}
+.icon{
+    transform: translateY(0.4rem);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/*gradientes*/
+.gradient{
+    background: var(--primaryGradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0.5rem;
+}
+.gradient1{
+    background: var(--secondaryGradient);  
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+    .gradient2{
+        padding: 1rem;
+            background: var(--tertiaryGradient);
+            background-clip: text;
+            -webkit-background-clip: text;}
+    .gradient3{
+        padding: 1rem;
+            background: var(--tertiaryGradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    .gradient4{
+        padding: 1rem;
+            background: var(--quarterGradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    .gradient5{
+        padding: 1rem;
+            background: var(--fiftithGradient);
+            background-clip: text; }
+    .gradient1,.gradient2,.gradient3,.gradient4,.gradient5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    -webkit-text-fill-color: transparent;
+    margin-left: 0.5rem;
+}
+/*header*/
+h1{
+    font-size: 3rem;
+}
+.h2h{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialMedia{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.socialMedia i{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.socialMedia i:hover{
+    color: var(--colorhover);
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+#contato{
+        display: flex;
+    flex-direction: column;
+}
+#contato p{
+    align-self: center;
+}
