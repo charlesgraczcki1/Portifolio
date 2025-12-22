@@ -1,0 +1,37 @@
+/* =========================================================
+   MODO THUMB / PRINT – ESCALA PURA (SEM REFLUXO DE LAYOUT)
+   ========================================================= */
+
+html.thumb-mode {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+/* trava scroll */
+html.thumb-mode,
+html.thumb-mode body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+}
+
+/*
+  Escala VISUAL apenas.
+  NÃO altera padding, fonte, flex, grid ou posição.
+*/
+html.thumb-mode body {
+  transform: scale(0.17);
+  transform-origin: top left;
+
+  /* mantém o layout original intacto */
+  width: 100vw;
+  height: auto;
+}
+
+/* Garante que nada “vaze” da tela */
+html.thumb-mode body > * {
+  overflow: visible;
+}
+
+/* NÃO TOCAR EM MAIS NADA */
