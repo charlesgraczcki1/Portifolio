@@ -227,9 +227,11 @@ h1{
     transition: 0.3s;
     border:solid red 2px;
 }
-.sfew{
+.escondido{
     visibility: hidden;
-    display: none;
+}
+#sfew{
+        display: none;
     max-width: 50rem;
     max-height: 50rem;
 }
