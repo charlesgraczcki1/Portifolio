@@ -1,0 +1,1 @@
+figma que eu peguei para me basear e criar o portifólio https://www.figma.com/design/BuXceezTrryByzRgpQGQgT/Developer-Portfolio-Website-Design--Community-?version-id=2299979910708351570&node-id=0-1&p=f&t=XqUefXm4sGZiJpaq-0
