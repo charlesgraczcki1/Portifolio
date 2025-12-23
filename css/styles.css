@@ -54,6 +54,11 @@ background-color: var(--colorhover);
         color: #4944b8;
         transition: 0.5s;
     }
+.cliqueAqui:hover{
+background-color: var(--colorhover);
+        color: #4944b8;
+        transition: 0.5s;
+    }
 .btn{
     width: 10rem;
     height: 2rem;
@@ -200,4 +205,31 @@ h1{
 }
 #contato p{
     align-self: center;
+}
+.imagem1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnquenaoalinhou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.cliqueAqui{
+    border-radius: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    box-sizing:content-box;
+}
+.sfew:hover{
+    transition: 0.3s;
+    border:solid red 2px;
+}
+.sfew{
+    visibility: hidden;
+    display: none;
+    max-width: 50rem;
+    max-height: 50rem;
 }
