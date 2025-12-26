@@ -223,15 +223,26 @@ h1{
     font-size: 1.5rem;
     box-sizing:content-box;
 }
-.sfew:hover{
+.img1:hover{
     transition: 0.3s;
     border:solid red 2px;
 }
 .escondido{
     visibility: hidden;
+    display: none;
 }
 #sfew{
-        display: none;
+
     max-width: 50rem;
     max-height: 50rem;
+}
+#experiencia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border:solid 2px red;
+}
+.experience-item{
+    
+    border:solid 2px red;
+
 }
