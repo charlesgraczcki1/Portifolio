@@ -1,13 +1,22 @@
 //seleção de elementos
-const clicked = document.querySelector(".cliqueAqui");
-const hidedd = document.querySelector(".escondido");
+const clicked = document.querySelector(".btnproj");
+const hidded = document.querySelector("#sfew");
 
+const clicked2= document.querySelector(".btnsub");
+const hidded2 = document.querySelector(".xp2");
 
-
-
-
+const clicked3 = document.querySelector(".xp4");
+const hidded3 = document.querySelector(".experiencias");
 
 //funções
     clicked.addEventListener("click", ()=>{
-    hidedd.classList.toggle("escondido")
+        hidded.classList.toggle("escondido")
+    });
+
+    clicked2.addEventListener("click",()=>{
+    hidded2.classList.toggle("escondido")
+    });
+
+    clicked3.addEventListener("click",()=>{
+    hidded3.classList.toggle("escondido")
     });
