@@ -11,9 +11,9 @@
     --secondaryGradient:linear-gradient(90deg, #00b93e 0%,#b3f043 100%);
     --tertiaryGradient:linear-gradient(90deg, #d2a31e 0%,#fe7843 100%);
     --quarterGradient:linear-gradient(90deg, #12b3ab 0%,#558332 50%,#5aa81f 100%);
-    --fiftithGradient:linear-gradient(90deg, #8a7c9c 0%,#c5c0c9 100%);
-    --sixthGradient:linear-gradient(90deg, #a5d9db 0%,#0983b3 100%);
-    --Gradient7:linear-gradient(90deg, #d44b33 0%,#f0821c 100%);
+    --fiftithGradient:linear-gradient(90deg, #6e0cee 0%,#c5c0c9 100%);
+    --sixthGradient:linear-gradient(90deg, #eb2828 0%,#7509b3 100%);
+    --Gradient7:linear-gradient(90deg, #f72f0c 0%,#f0821c 100%);
     --fontnav: "Plus Jakarta Sans", sans-serif;
     --fontglobal: "Poppins", sans-serif;
 }
@@ -45,6 +45,7 @@ nav{
     align-items:center;
     justify-content: space-between;
     font-family: var(--fontnav);
+    margin-bottom: 3rem;
 }
 a {
     text-decoration: none;
@@ -55,7 +56,7 @@ a {
 }
 .btn:hover{
 background-color: var(--colorhover);
-        color: #4944b8;
+        color: #6847c5;
         transition: 0.5s;
     }
 .cliqueAqui:hover{
@@ -64,8 +65,9 @@ background-color: var(--colorhover);
         transition: 0.5s;
     }
 .btn{
+    margin-bottom: 1rem;
     font-size: 0.7rem;
-    border-radius: 1rem;
+    border-radius: 20rem;
     padding: 0.5rem;
     background-color: var(--bg2);
 }
