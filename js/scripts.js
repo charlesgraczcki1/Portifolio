@@ -7,6 +7,7 @@ const hidded2 = document.querySelector(".xp2");
 
 const clicked3 = document.querySelector(".xp4");
 const hidded3 = document.querySelector(".experiencias");
+const baixarcv = document.querySelector("#cv");
 
 //funções
     clicked.addEventListener("click", ()=>{

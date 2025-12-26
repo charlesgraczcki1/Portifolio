@@ -1,15 +1,19 @@
 :root {
     --bg: #32344f;
+    --bg2:#373F48;
     --colorhover:#63cafe;/*escolhi essa cor por que  esta escrito café nela hahaha*/
     --texto: #d5f4f9;
     --borda: #e5e7eb;
     --caixa: #f8fafc;
     --acao: #2563eb;
+    
     --primaryGradient:linear-gradient(90deg, #0084b9 0%,#00d689 100%);
     --secondaryGradient:linear-gradient(90deg, #00b93e 0%,#b3f043 100%);
     --tertiaryGradient:linear-gradient(90deg, #d2a31e 0%,#fe7843 100%);
-    --quarterGradient:linear-gradient(90deg, #12b3ab 0%,#253916 100%);
+    --quarterGradient:linear-gradient(90deg, #12b3ab 0%,#558332 50%,#5aa81f 100%);
     --fiftithGradient:linear-gradient(90deg, #8a7c9c 0%,#c5c0c9 100%);
+    --sixthGradient:linear-gradient(90deg, #a5d9db 0%,#0983b3 100%);
+    --Gradient7:linear-gradient(90deg, #d44b33 0%,#f0821c 100%);
     --fontnav: "Plus Jakarta Sans", sans-serif;
     --fontglobal: "Poppins", sans-serif;
 }
@@ -60,13 +64,12 @@ background-color: var(--colorhover);
         transition: 0.5s;
     }
 .btn{
-    display: flex;
-    font-size: 1rem;
-    box-sizing: content-box;
-    justify-content: center;
+    font-size: 0.7rem;
     border-radius: 1rem;
     padding: 0.5rem;
+    background-color: var(--bg2);
 }
+
 html, body {
     height: 100%;
     width: 100%;
@@ -140,46 +143,52 @@ i.fa-brands.fa-square-js{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 0.5rem;
 }
 .gradient1{
-    background: var(--secondaryGradient);  
-    background-clip: text;
-    -webkit-background-clip: text;
+            background: var(--secondaryGradient);  
+            background-clip: text;
 }
     .gradient2{
-        padding: 1rem;
             background: var(--tertiaryGradient);
             background-clip: text;
-            -webkit-background-clip: text;}
+            }
     .gradient3{
-        padding: 1rem;
             background: var(--tertiaryGradient);
             background-clip: text;
-            -webkit-background-clip: text;
+            
         }
     .gradient4{
-        padding: 1rem;
+        
             background: var(--quarterGradient);
             background-clip: text;
-            -webkit-background-clip: text;
         }
     .gradient5{
-        padding: 1rem;
             background: var(--fiftithGradient);
             background-clip: text; }
-    .gradient1,.gradient2,.gradient3,.gradient4,.gradient5{
+    .gradient6{
+            background: var(--sixthGradient);
+            background-clip: text;
+            
+}
+.gradient7{
+            background: var(--Gradient7);
+            background-clip: text;
+            
+}
+
+    .gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
     -webkit-text-fill-color: transparent;
-    margin-left: 0.5rem;
+
 }
 /*header*/
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+#projetos{
+    margin: 1rem;
 }
 .h2h{
     font-size: 2rem;
@@ -243,7 +252,7 @@ h1{
 }
 
 .experience-item{
-    background-color:#0084b9;
+    background-color:#238d53;
     border-radius:1rem;
     padding: 3rem;
     margin-bottom: 1rem;
@@ -268,3 +277,4 @@ h1{
         visibility: hidden;
         display: none;
     }
+
