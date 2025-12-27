@@ -1,13 +1,13 @@
 //seleção de elementos
 const clicked = document.querySelector(".btnproj");
 const hidded = document.querySelector("#sfew");
-
-const clicked2= document.querySelector(".btnsub");
-const hidded2 = document.querySelector(".xp2");
-
-const clicked3 = document.querySelector(".xp4");
-const hidded3 = document.querySelector(".experiencias");
+const clicked2 = document.querySelector(".botaoxp");
+const hidded2 = document.querySelector(".experiencias");
 const baixarcv = document.querySelector("#cv");
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.querySelector("nav");
+
+
 
 //funções
     clicked.addEventListener("click", ()=>{
@@ -16,9 +16,8 @@ const baixarcv = document.querySelector("#cv");
 
     clicked2.addEventListener("click",()=>{
         hidded2.classList.toggle("escondido")
-        console.log("click");
     });
 
-    clicked3.addEventListener("click",()=>{
-    hidded3.classList.toggle("escondido")
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
     });

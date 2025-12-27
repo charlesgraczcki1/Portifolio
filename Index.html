@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- ======================================================
-        META / CONFIGURAÇÕES BÁSICAS
-    ======================================================= -->
+<!-- ======================================================
+    META / CONFIGURAÇÕES BÁSICAS
+======================================================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfólio | Charles Graczcki</title>
 
-    <!-- ======================================================
-        ESTILOS
-    ======================================================= -->
+<!-- ======================================================
+    ESTILOS
+======================================================= -->
     <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Font Awesome -->
@@ -20,9 +20,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
 
-    <!-- ======================================================
-        FAVICONS
-    ======================================================= -->
+<!-- ======================================================
+    FAVICONS
+======================================================= -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon/favicon-64.png">
@@ -30,42 +30,46 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512.png">
 
-    <!-- ======================================================
-        FONTES
-    ======================================================= -->
+<!-- ======================================================
+    FONTES
+======================================================= -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
     </style>
 
-    <!-- ======================================================
-        SCRIPT
-    ======================================================= -->
+<!-- ======================================================
+    SCRIPT
+======================================================= -->
     <script src="/js/scripts.js" defer></script>
 </head>
 
 <body>
 
-    <!-- ======================================================
+<!-- ======================================================
         SEÇÃO HOME
-    ======================================================= -->
+======================================================= -->
     <section id="home" class="box">
 
         <header class="topo">
             <div class="container">
 
-                <!-- Navegação -->
-                <nav class="nav">
-                    <img class="portico" src="/assets/favicon/android-chrome-512.png" alt="Ícone do Portfólio">
+<!-- Navegação -->
+    <nav class="nav">
+        <img class="portico" src="/assets/favicon/android-chrome-512.png">
 
-                    <a class="navItem" href="#home">Home</a>
-                    <a class="navItem" href="#aboutMe">Sobre Mim</a>
-                    <a class="navItem" href="#projetos">Projetos</a>
-                    <a class="navItem" href="#xp">Experiências</a>
-                    <a class="navItem" href="#contato">Contato</a>
-                </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a class="navItem" href="#home">Home</a>
+        <a class="navItem" href="#aboutMe">Sobre Mim</a>
+        <a class="navItem" href="#projetos">Projetos</a>
+        <a class="navItem" href="#xp">Experiências</a>
+        <a class="navItem" href="#contato">Contato</a>
 
-                <!-- Apresentação -->
+    </nav>
+
+<!-- Apresentação -->
                 <div class="presentation">
                     <h2>Olá! Me chamo Charles Graczcki</h2>
                     <h2>Trabalho como Analista de Suporte e Desenvolvedor</h2>
@@ -75,9 +79,9 @@
             </div>
         </header>
 
-        <!-- ======================================================
-            SOBRE MIM
-        ======================================================= -->
+<!-- ======================================================
+    SOBRE MIM
+======================================================= -->
         <div id="aboutMe" class="aboutMe">
             <p class="Paragrafo">Tenho 10 anos de experiência em atendimento ao público no setor de varejo.</p>
             <p class="Paragrafo">Em 2022 comecei a perseguir meu sonho de atuar na área de tecnologia.</p>
@@ -89,13 +93,13 @@
 
     </section>
 
-    <!-- ======================================================
+<!-- ======================================================
         TECNOLOGIAS
-    ======================================================= -->
+======================================================= -->
     <section class="box">
             <button class="btn curriculo">
                 <a href="/assets/Curriculo_Charles_Graczcki_ATS.pdf" target="_blank">
-                    <h2 class="gradient7">Baixar Meu Currículo</h2>
+                    <h2 class="gradient6">Baixar Meu Currículo</h2>
                 </a>
             </button>
 
@@ -109,33 +113,34 @@
                 <img class="icon" src="/assets/spring-boot-svgrepo-com.svg" alt="Spring Boot">
             </div>
     </section>
-            <!-- ==================================================
-                PROJETOS
-            =================================================== -->
-            <div id="projetos" class="projectbox">
+<!-- ==================================================
+    PROJETOS
+=================================================== -->
+            <section id="projetos" class="projectbox">
                 <button class="btn btnproj cliqueAqui">
                     <h2 class="gradient3">Clique aqui para ver os projetos</h2>
                 </button>
-
                 <div id="projetofw" class="imagem1">
                     <a class="img1" href="http://example.com" target="_blank">
                         <img id="sfew" class="escondido" src="/assets/FrontendWeek.png" alt="Projeto Frontend Week">
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <!-- ==================================================
-                EXPERIÊNCIA
-            =================================================== -->
-            <button id="xp" class="btn xp4">
+<!-- ==================================================
+    EXPERIÊNCIA
+=================================================== -->
+            <div class="camisadeforca">
+            <button id="xp" class="btn botaoxp">
                 <h2 class="gradient4">Experiências</h2>
-            </button>
+            </button></div>
 
             <section class="experiencias escondido">
 
-                <!-- Experiência 1 -->
+<!-- Experiência 1 -->
                 <div class="experience-item">
-                    <span class="company">Empresa de bebidas • 2025 (Atual)</span>
+                    <h4>Analista de Operações Digitais</h4>
+                    <span class="compania">(Capgemini) Empresa de bebidas • 2025 (Atual)</span>
                     <p class="tech">SAP · SQL · Automação</p>
                     <ul>
                         <li>Análise de pedidos</li>
@@ -145,51 +150,35 @@
                     </ul>
                 </div>
 
-                <!-- Experiência 2 -->
+<!-- Experiência 2 -->
                 <div class="experience-item">
                     <h4>Analista de Operações Digitais</h4>
-                    <span class="company">Varejo • 2024–2025</span>
+                    <span class="compania">(Capgemini) Empresa do ramo de varejos • 2024–2025</span>
                     <ul>
                         <li>Suporte técnico presencial</li>
                         <li>Infraestrutura e sistemas</li>
                     </ul>
                 </div>
 
-                <!-- Experiência 3 -->
+<!-- Experiência 3 -->
                 <div class="experience-item">
                     <h4>Help Desk</h4>
-                    <span class="company">ERP • 2022</span>
+                    <span class="compania">Habil Software Sistemas ERP • 2022</span>
                     <ul>
                         <li>Suporte ERP</li>
                         <li>SQL e Windows</li>
                     </ul>
                 </div>
-
-                <!-- Outras experiências -->
-                <button class="btn btnsub">
-                    <h2 class="gradient6">Outras Experiências</h2>
-                </button>
-
-                <div class="escondido xp2">
-                    <div class="experience-item">
-                        <h4>Repositor</h4>
-                        <span>Carrefour</span>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Atendente</h4>
-                        <span>McDonald's</span>
-                    </div>
-                </div>
             </section>
     
 
-    <!-- ======================================================
-        RODAPÉ / CONTATO
-    ======================================================= -->
+<!-- ======================================================
+    RODAPÉ / CONTATO
+======================================================= -->
     <footer>
         <div id="contato">
             <h1 class="gradient5">Contato</h1>
-            <p>Clique nos ícones abaixo para entrar em contato</p>
+            <span>Clique nos ícones abaixo para entrar em contato</span>
         </div>
 
         <div class="socialMedia">
