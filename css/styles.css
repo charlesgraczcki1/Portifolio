@@ -361,6 +361,15 @@ header img {
         padding: 2rem;
         font-size: 1.3rem;
     }
+    .btn {
+    width: auto;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 /* -------------------------
@@ -392,10 +401,15 @@ header img {
         text-align: center;
     }
 
-    .btn {
-        width: 90%;
-        font-size: 0.8rem;
-    }
+.btn {
+    width: auto;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
     #tecnologias {
         flex-wrap: wrap;
