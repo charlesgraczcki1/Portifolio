@@ -102,6 +102,7 @@ nav {
     background-color: var(--colorhover);
     color: #6847c5;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /*Não remover esta caixa. 
@@ -273,6 +274,7 @@ header img {
 
 #contato span {
     align-self: center;
+    padding: 2rem;
 }
 
 /* =========================================================
@@ -419,9 +421,7 @@ header img {
     .socialMedia {
         flex-wrap: wrap;
     }
-    .contato span{
-        padding: 1rem;
-    }
+    
 }
 
 /* -------------------------
@@ -473,6 +473,7 @@ header img {
     align-items: center;
     justify-content: center;
 }
+
 
 /*Ajuste específico do ícone do java*/
 #tecnologias i.fa-brands.fa-java{
