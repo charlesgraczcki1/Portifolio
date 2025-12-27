@@ -1,282 +1,300 @@
+/* =========================================================
+    VARIÁVEIS GLOBAIS
+   ========================================================= */
 :root {
     --bg: #32344f;
-    --bg2:#373F48;
-    --colorhover:#63cafe;/*escolhi essa cor por que  esta escrito café nela hahaha*/
+    --bg2: #373F48;
+    --colorhover: #63cafe; /* café ☕ */
     --texto: #d5f4f9;
     --borda: #e5e7eb;
     --caixa: #f8fafc;
     --acao: #2563eb;
-    
-    --primaryGradient:linear-gradient(90deg, #0084b9 0%,#00d689 100%);
-    --secondaryGradient:linear-gradient(90deg, #00b93e 0%,#b3f043 100%);
-    --tertiaryGradient:linear-gradient(90deg, #d2a31e 0%,#fe7843 100%);
-    --quarterGradient:linear-gradient(90deg, #12b3ab 0%,#558332 50%,#5aa81f 100%);
-    --fiftithGradient:linear-gradient(90deg, #6e0cee 0%,#c5c0c9 100%);
-    --sixthGradient:linear-gradient(90deg, #eb2828 0%,#7509b3 100%);
-    --Gradient7:linear-gradient(90deg, #f72f0c 0%,#f0821c 100%);
+
+    /* Gradientes */
+    --primaryGradient: linear-gradient(45deg, #0084b9 0%, #00d689 100%);
+    --secondaryGradient: linear-gradient(180deg, #00b93e 0%, #b3f043 100%);
+    --tertiaryGradient: linear-gradient(180deg, #d2a31e 0%, #fe7843 100%);
+    --quarterGradient: linear-gradient(180deg, #080161 0%, #0b29d3 100%);
+    --fiftithGradient: linear-gradient(180deg, #6e0cee 0%, #c5c0c9 100%);
+    --sixthGradient: linear-gradient(180deg, #eb2828 0%, #7509b3 100%);
+    --Gradient7: linear-gradient(180deg, #f72f0c 0%, #f0821c 100%);
+
+    /* Fontes */
     --fontnav: "Plus Jakarta Sans", sans-serif;
     --fontglobal: "Poppins", sans-serif;
 }
-.fa-brands.fa-css3{
-color: #264DE4;
-background-image: linear-gradient(#667dda, #2965F1);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.fa-brands.fa-html5 {
-    color: #E44D26; 
-    background-image: linear-gradient(#e27554, #be4e26);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/* Estilos padrão */
-* {
 
-    padding: 0;
+/* =========================================================
+    RESET / BASE
+   ========================================================= */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-nav{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    font-family: var(--fontnav);
-    margin-bottom: 3rem;
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
+
+body {
+    font-family: var(--fontglobal);
+    background-color: var(--bg);
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================================
+    ELEMENTOS PADRÃO
+   ========================================================= */
 a {
     text-decoration: none;
     color: var(--texto);
 }
-.navItem:hover{
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1em;
+}
+
+p.Paragrafo {
+    margin-left: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* =========================================================
+    NAVEGAÇÃO
+   ========================================================= */
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fontnav);
+    margin-bottom: 3rem;
+}
+
+.navItem:hover {
     color: var(--colorhover);
 }
-.btn:hover{
-background-color: var(--colorhover);
-        color: #6847c5;
-        transition: 0.5s;
-    }
-.cliqueAqui:hover{
-background-color: var(--colorhover);
-        color: #4944b8;
-        transition: 0.5s;
-    }
-.btn{
+
+/* =========================================================
+    BOTÕES
+   ========================================================= */
+.btn {
     margin-bottom: 1rem;
     font-size: 0.7rem;
-    border-radius: 20rem;
     padding: 0.5rem;
+    border-radius: 20rem;
     background-color: var(--bg2);
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+.btn:hover {
+    background-color: var(--colorhover);
+    color: #6847c5;
+    transition: 0.5s;
 }
-body {
-    margin: 0;
-    font-family: var(--fontglobal);
-    min-height: 100vh;
+
+
+/* =========================================================
+    HEADER / CONTAINERS
+   ========================================================= */
+header {
     display: flex;
-    flex-direction: column;
-    background-color: var(--bg);
-    color: var(--texto);
-}
-.sobremin{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-}
-header{
-    display: flex;
-    box-sizing: border-box;
     justify-content: space-around;
 }
-header img{
-    display: flex;
-    align-self: start;
+
+header img {
     max-width: 5rem;
     max-height: 5rem;
 }
-.container{
+
+.container {
     width: 100%;
     height: 100%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-p{
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-    letter-spacing: 0.1em;
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
 }
-p.upercase{
-    margin-left: 1rem;
-}
-#tecnologias{
+
+/* =========================================================
+    TECNOLOGIAS / ÍCONES
+   ========================================================= */
+#tecnologias {
     width: 100%;
     display: flex;
-    flex-direction: row;
-        align-items: baseline;
-        justify-content: center;
-    }
+    justify-content: center;
+    align-items: baseline;
+}
+
 #tecnologias i {
     font-size: 2.5rem;
     padding: 0.5rem;
     padding-top: 1rem;
 }
-i.fa-brands.fa-square-js{
-    color: #F7DF1E;
-}
-.icon{
-    transform: translateY(0.4rem);
+
+.icon {
     width: 2.5rem;
     height: 2.5rem;
+    transform: translateY(0.4rem);
 }
-/*gradientes*/
-.gradient{
-    background: var(--primaryGradient);
+
+/* Ícones específicos */
+.fa-brands.fa-css3 {
+    color: #264DE4;
+    background-image: linear-gradient(#667dda, #2965F1);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.gradient1{
-            background: var(--secondaryGradient);  
-            background-clip: text;
-}
-    .gradient2{
-            background: var(--tertiaryGradient);
-            background-clip: text;
-            }
-    .gradient3{
-            background: var(--tertiaryGradient);
-            background-clip: text;
-            
-        }
-    .gradient4{
-        
-            background: var(--quarterGradient);
-            background-clip: text;
-        }
-    .gradient5{
-            background: var(--fiftithGradient);
-            background-clip: text; }
-    .gradient6{
-            background: var(--sixthGradient);
-            background-clip: text;
-            
-}
-.gradient7{
-            background: var(--Gradient7);
-            background-clip: text;
-            
+
+.fa-brands.fa-html5 {
+    color: #E44D26;
+    background-image: linear-gradient(#e27554, #be4e26);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-    .gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7{
+.fa-brands.fa-square-js {
+    color: #F7DF1E;
+}
+
+/* =========================================================
+    GRADIENTES DE TEXTO
+   ========================================================= */
+
+.gradient  {  background: var(--primaryGradient);}
+.gradient1 { background: var(--secondaryGradient); }
+.gradient2 { background: var(--tertiaryGradient); }
+.gradient3 { background: var(--tertiaryGradient); }
+.gradient4 { background: var(--quarterGradient); }
+.gradient5 { background: var(--fiftithGradient); }
+.gradient6 { background: var(--sixthGradient); }
+.gradient7 { background: var(--Gradient7); }
+
+.gradient,
+.gradient1,
+.gradient2,
+.gradient3,
+.gradient4,
+.gradient5,
+.gradient6,
+.gradient7 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
 
-}
-/*header*/
-h1{
-    font-size: 2rem;
-}
-#projetos{
+/* =========================================================
+    SEÇÕES
+   ========================================================= */
+#projetos {
     margin: 1rem;
 }
-.h2h{
+
+.presentation {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.socialMedia{
+
+/* =========================================================
+    SOCIAL / CONTATO
+   ========================================================= */
+.socialMedia {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
-.socialMedia i{
+
+.socialMedia i {
     font-size: 2.5rem;
     padding: 1rem;
 }
-.socialMedia i:hover{
+
+.socialMedia i:hover {
     color: var(--colorhover);
 }
-.contato{
+
+.contato {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-bottom: 2rem;
 }
-#contato{
-        display: flex;
+
+#contato {
+    display: flex;
     flex-direction: column;
 }
-#contato p{
+
+#contato p {
     align-self: center;
 }
-.imagem1{
+
+/* =========================================================
+    IMAGENS
+   ========================================================= */
+.imagem1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cliqueAqui{
-    border-radius: 20rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    box-sizing:content-box;
-}
-.img1:hover{
-    transition: 0.3s;
-    border:solid red 2px;
-}
-.escondido{
-    visibility: hidden;
-    display: none;
-}
-#sfew{
 
+.img1:hover {
+    transition: 0.3s;
+    border: solid red 2px;
+}
+
+#sfew {
     max-width: 50rem;
     max-height: 50rem;
 }
-#experiencia{
+
+/* =========================================================
+    EXPERIÊNCIA
+   ========================================================= */
+#experiencia {
     display: grid;
     grid-auto-flow: column;
-
 }
 
-.experience-item{
-    background-color:#238d53;
-    border-radius:1rem;
+.experience-item {
+    background-color: #238d53;
+    border-radius: 1rem;
     padding: 3rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    }
+}
 
-    .h4c{
+.h4c {
     display: flex;
+    justify-self: center;
     align-self: center;
     font-size: 1.4rem;
-    justify-self: center;
     margin: 2rem;
-    border-radius: 10rem;
     padding: 1rem;
-    }
+    border-radius: 10rem;
+}
 
-    .xp2.escondido{
-        visibility: hidden;
-        display: none;
-    }
-    .xp4.escondido{
-        visibility: hidden;
-        display: none;
-    }
-
+/* =========================================================
+    UTILITÁRIOS
+   ========================================================= */
+.escondido {
+    display: none;
+}

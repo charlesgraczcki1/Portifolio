@@ -15,7 +15,8 @@ const baixarcv = document.querySelector("#cv");
     });
 
     clicked2.addEventListener("click",()=>{
-    hidded2.classList.toggle("escondido")
+        hidded2.classList.toggle("escondido")
+        console.log("click");
     });
 
     clicked3.addEventListener("click",()=>{
